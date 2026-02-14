@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* whole container */
+.pricing-card {
+  border-radius: 0.8rem;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  font-family: sans-serif;
+}
+/* top half container */
+.card-header {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+}
+
+h1 {
+    color: #0ca4b8;
+    margin-bottom: 2rem;
+    font-size: 3.5rem; /* font size 2rem for responsive?*/
+}
+
+.guarantee {
+    color: #c0df34;
+    font-size: 1.8rem; /* font size 1.2rem for responsive?*/
+    margin-bottom: 1.3rem;
+}
+
+.description {
+    color: #7a7979;
+    display: block;
+    font-size: 1.25rem;/* font size 2rem for responsive?*/
+    width: 100%;
+}
+
+/* bottom half container */
+.card-body {
+    display: flex;
+}
+
+.subscription-info, .why-container {
+    flex: 1;
+    padding: 2rem;
+    color: #fafafa;
+}
+
+/* subscription container */
+.subscription-info {
+    background-color: rgb(7, 158, 158);
+    padding: 3rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.price {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.price data {
+    font-size: 1.8rem;
+}
+
+span {
+    font-weight: 300;
+    font-size: large;
+}
+
+ p {
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.signup-btn {
+    background-color: #c0df34; /* The lime green */
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+.signup-btn:hover {
+    background-color: #b323df;
+    color: black;
+}
+
+/* why container */
+.why-container {
+    background-color: rgb(30, 178, 204);
+    padding: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style-type: none;
+    line-height: 2.5rem;
+}
+
+li {
+    font-size: 1.5rem;
+}
+
+ /* Responsive Mobile Design */
+ 
+@media (max-width: 490px) {
+    /* 1. Stack the bottom two boxes */
+    .card-body {
+            flex-direction: column;
+    }
+
+    /* 2. Shrink the massive padding so it fits on small screens */
+    .card-header {
+        padding: 1.5rem; 
+    }
+
+    /* 3. Scale down the typography */
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .guarantee {
+        font-size: 1rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+
+    .signup-btn {
+        font-size: 1.5rem;
+    }
+
+    li {
+        font-size: 1rem;
+    }
+
+    .subscription-info, .why-container {
+        padding: 1.5rem; /* Less padding on mobile */
+    }
+}
